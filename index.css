@@ -19,6 +19,28 @@
   }
 
   h1 {
+    color: rgb(226, 226, 226);
+    border-radius: 5rem;
+    background-color: transparent;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    backdrop-filter: blur(10px);
+  }
+
+  h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1%;
+    background: linear-gradient(to right, rgba(33, 155, 223, 0) 0%, rgba(33, 155, 223, 0.91) 50%, rgba(33, 155, 223, 0) 100%);
+    box-shadow: 0px 6px 12px -7px rgba(33, 155, 223, 0.91);
+    z-index: -1;
+  }
+
+  h2 {
     color: white;
   }
 
@@ -54,7 +76,6 @@
   .main-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
